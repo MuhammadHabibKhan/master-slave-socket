@@ -107,9 +107,9 @@ void assignWorkload(int servers)
         int totalElements = endIndex - startIndex + 1;
         int *dataElements = malloc(totalElements * sizeof(int));
 
-        // setting first element as size of array because C is a dumb language where arrays are not first class citizens
-        // which means no passing by values and need to pass as pointer which gives size of pointer instead of size of array 
-        // NOT COOL! SCREW YOU C ...
+        // setting first element as size of array as arrays are not first class citizens
+        // hence cannot pass by values and need to pass array as a pointer which gives size of pointer instead of size of array 
+        
         dataElements[0] = totalElements - 1;
 
         for (int h = 1; h < totalElements; h++)
