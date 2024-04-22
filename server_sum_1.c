@@ -16,7 +16,7 @@ int main() {
     // struct to hold server and client address | sockaddr_un used for AF_LOCAL 
     struct sockaddr_un server_addr, client_addr; 
 
-    // Create a socket for server listening | AF_LOCAL => local host | SOCK_STREAM => TCP | Protocol => 0 for TCP/UDP
+    // Create a socket for server listening | AF_LOCAL => local host | SOCK_STREAM => Stream Data | Protocol => 0 for TCP/UDP
     sockfd = socket(AF_LOCAL, SOCK_STREAM, 0);
 
     // Check if failed to create socket 
